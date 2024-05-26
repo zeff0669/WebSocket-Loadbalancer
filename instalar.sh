@@ -37,7 +37,7 @@ frontend WebSocket_front
 backend WebSocket_back
     mode tcp
     balance leastconn
-    server server1 0.0.0.0:77 check
-    server server2 0.0.0.0:78 check
-    server server3 0.0.0.0:79 check
+    server server1 127.0.0.1:77 check
+    server server2 127.0.0.1:78 check
+    server server3 127.0.0.1:79 check
 " > /tmp/arquivo.cfg
